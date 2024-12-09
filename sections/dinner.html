@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: #ff6600;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ff6600 !important;
+        }
+
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: #fff !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ff6600;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            flex-grow: 1;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: #ff6600;
+            border-color: #ff6600;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #e55a00;
+            border-color: #e55a00;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .effect {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 102, 0, 0.1);
+            z-index: -1;
+            transition: width 0.3s;
+        }
+
+        .effect:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">
+                <img src="Healthy Apple.jpeg" alt="Logo" style="max-height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBreakfast" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Breakfast
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownBreakfast">
+                            <li><a class="dropdown-item" href="/breakfast/avado.html">Avocado Breakfast Salad</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/feta.html">Feta Egg and Spinach</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/index.html">Sesame Instant Ramen</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/bb.html">Blackbeans</a></li>
+                            <li><a class="dropdown-item" href="/breakfast/peanut.html">Peanut Butter & Chia Berry Jam Muffin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLunch" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lunch</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLunch">
+                            <li><a class="dropdown-item" href="/lunch/buffalo.html">Buffalo Chicken</a></li>
+                            <li><a class="dropdown-item" href="/lunch/vegg.html">Veggie & Hummus Sandwich</a></li>
+                            <li><a class="dropdown-item" href="/lunch/lettuce.html">Lettuce Wraps</a></li>
+                            <li><a class="dropdown-item" href="/lunch/cobb salad.html">Chicken Salad</a></li>
+                            <li><a class="dropdown-item" href="/lunch/chicken.html">Chicken Quesadillas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDinner" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dinner</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDinner">
+                            <li><a class="dropdown-item" href="/dinner/adobo.html">Chicken Adobo</a></li>
+                            <li><a class="dropdown-item" href="/dinner/chicken.html">Chicken Binagoongan</a></li>
+                            <li><a class="dropdown-item" href="/dinner/gising.html">Chicken Gising Gising</a></li>
+                            <li><a class="dropdown-item" href="/dinner/teriyaki.html">Teriyaki Bowl</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content for dinner items -->
+    <div class="container text-center">
+        <h1 class="mt-4">Delicious Dinner Recipes</h1>
+        <p>Explore our selection of healthy and tasty dinner recipes to enjoy your evening meals!</p>
+
+        <div class="row mt-4">
+            <!-- Dinner Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card effect">
+                    <img src="/img/image.png" class="card-img-top" alt="Chicken Adobo">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Adobo</h5>
+                        <p class="card-text">A flavorful Filipino dish with marinated chicken cooked in a tangy, soy sauce-based sauce.</p>
+                        <a href="/dinner/adobo.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dinner Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card effect">
+                    <img src="/img/chicken-binagoongan.jpg" class="card-img-top" alt="Chicken Binagoongan">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Binagoongan</h5>
+                        <p class="card-text">A savory Filipino dish with chicken cooked in shrimp paste for a rich and unique flavor.</p>
+                        <a href="/dinner/chicken.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dinner Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card effect">
+                    <img src="/img/Pineapple-Chicken-Filipino-Version.jpg" class="card-img-top" alt="Pineapple Chicken">
+                    <div class="card-body">
+                        <h5 class="card-title">Pineapple Chicken</h5>
+                        <p class="card-text">A spicy chicken dish made with coconut milk and chili for a flavorful, warming meal.</p>
+                        <a href="/dinner/malapot.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Dinner Item 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card effect">
+                    <img src="/img/escabeche.webp" class="card-img-top" alt="Escabeche">
+                    <div class="card-body">
+                        <h5 class="card-title">Escabeche</h5>
+                        <p class="card-text">A traditional Filipino dish with a sweet and sour sauce, often served with fried fish or chicken.</p>
+                        <a href="/dinner/escabech.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dinner Nutrition Tips Section -->
+    <div class="container mt-5">
+        <h2>Dinner Nutrition Tips</h2>
+        <p>Make the most of your dinner with these helpful nutrition tips to stay healthy and satisfied!</p>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Portion Control</h5>
+                <p class="card-text">Balancing portion sizes ensures that you get the right amount of nutrients without feeling overly full. Include lean protein, whole grains, and a variety of vegetables.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Balanced Meals</h5>
+                <p class="card-text">Combine protein, healthy fats, and fiber-rich carbohydrates to maintain energy levels and promote good digestion.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Stay Hydrated</h5>
+                <p class="card-text">Don't forget to drink water or herbal tea with your dinner to help digestion and keep you hydrated throughout the evening.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Health Benefits Section -->
+<div class="container mt-5">
+    <h2>Health Benefits of Dinner Ingredients</h2>
+    <ul>
+        <li><strong>Chicken:</strong> High in protein and essential vitamins, supports muscle health and energy levels.</li>
+        <li><strong>Quinoa:</strong> A complete protein source and rich in fiber, aiding digestion and providing long-lasting energy.</li>
+        <li><strong>Hummus:</strong> Full of healthy fats and protein, perfect for boosting heart health and satiety.</li>
+        <li><strong>Spinach:</strong> Packed with iron and antioxidants, promoting overall wellness and immune function.</li>
+    </ul>
+</div>
+
+<!-- User Comments and Tips Section -->
+<div class="container mt-5">
+    <h2>User Comments and Tips</h2>
+    <p>Share your dinner tips or see what others have to say about these recipes!</p>
+    <form id="commentForm">
+        <div class="mb-3">
+            <label for="userName" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="userComment" class="form-label">Your Comment:</label>
+            <textarea class="form-control" id="userComment" rows="3" placeholder="Share your tips or thoughts" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Comment</button>
+    </form>
+
+    <!-- Container for displaying comments -->
+    <div id="commentsContainer" class="mt-4"></div>
+</div>
+
+<script>
+    document.getElementById('commentForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form from submitting the traditional way
+
+        // Get input values
+        const userName = document.getElementById('userName').value;
+        const userComment = document.getElementById('userComment').value;
+
+        // Create a new div to display the comment
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('mb-3');
+        commentDiv.innerHTML = `
+            <h5>${userName}</h5>
+            <p>${userComment}</p>
+        `;
+
+        // Append the new comment to the comments container
+        document.getElementById('commentsContainer').appendChild(commentDiv);
+
+        // Clear the form inputs
+        event.target.reset();
+    });
+</script>
+
+<!-- FAQ Section -->
+<div class="container mt-5">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                    What is the best way to store dinner leftovers?
+                </button>
+            </h2>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Store leftovers in an airtight container in the refrigerator. Most dinner dishes can last up to 3 days and can be reheated or enjoyed cold.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                    Can I make these recipes ahead of time?
+                </button>
+            </h2>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes! Many dinner recipes can be prepped the night before or even frozen for longer storage. Store ingredients separately to maintain freshness and assemble before serving.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dinner Recipes. All rights reserved.</p>
+        <p>Website designed by YourName</p>
+        <p>Connect with us on <a href="#">social media</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

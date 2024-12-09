@@ -31,9 +31,9 @@ class FoodItem {
 const breakfastItems = [
     new FoodItem("Sesame Instant Ramen", "./seasami instant ramen.webp", "/breakfast/index.html"),
     new FoodItem("Peanut Butter & Chia Berry Jam Muffin", "./Peanut Butter & Chia Berry Jam English Muffin.webp", "/breakfast/peanut.html"),
-    new FoodItem("Avocado Breakfast Salad", "./AVOCADO BREAKFAST SALAD.webp", "/breakfast/avado.html"),
+    new FoodItem("Avocado Breakfast Salad", "/img/AVOCADO BREAKFAST SALAD.webp", "/breakfast/avado.html"),
     new FoodItem("Feta Egg and Spinach", "./EWL-feta-egg-and-spinach-breakfast-taco-step-05-2399-facf1af19e874405bffc5b55b80dc035.webp", "/breakfast/feta.html"),
-    new FoodItem("High Protein Black Bean", "./HIGH PROTEIN BLACKBEAN.webp", "/breakfast/bb.html")
+    new FoodItem("High Protein Black Bean", "img//HIGH PROTEIN BLACKBEAN.webp", "/breakfast/bb.html")
 ];
 
 // Lunch Section Items - An array of FoodItem objects for the lunch category

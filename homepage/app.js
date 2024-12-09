@@ -29,29 +29,29 @@ class FoodItem {
 
 // Breakfast Section Items - An array of FoodItem objects for the breakfast category
 const breakfastItems = [
-    new FoodItem("Sesame Instant Ramen", "./seasami instant ramen.webp", "/breakfast/index.html"),
-    new FoodItem("Peanut Butter & Chia Berry Jam Muffin", "./Peanut Butter & Chia Berry Jam English Muffin.webp", "/breakfast/peanut.html"),
+    new FoodItem("Sesame Instant Ramen", "/img/seasami instant ramen.webp", "/breakfast/index.html"),
+    new FoodItem("Peanut Butter & Chia Berry Jam Muffin", "/img/Peanut Butter & Chia Berry Jam English Muffin.webp", "/breakfast/peanut.html"),
     new FoodItem("Avocado Breakfast Salad", "/img/AVOCADO BREAKFAST SALAD.webp", "/breakfast/avado.html"),
-    new FoodItem("Feta Egg and Spinach", "./EWL-feta-egg-and-spinach-breakfast-taco-step-05-2399-facf1af19e874405bffc5b55b80dc035.webp", "/breakfast/feta.html"),
-    new FoodItem("High Protein Black Bean", "img//HIGH PROTEIN BLACKBEAN.webp", "/breakfast/bb.html")
+    new FoodItem("Feta Egg and Spinach", "/img/EWL-feta-egg-and-spinach-breakfast-taco-step-05-2399-facf1af19e874405bffc5b55b80dc035.webp", "/breakfast/feta.html"),
+    new FoodItem("High Protein Black Bean", "/img/HIGH PROTEIN BLACKBEAN.webp", "/breakfast/bb.html")
 ];
 
 // Lunch Section Items - An array of FoodItem objects for the lunch category
 const lunchItems = [
-    new FoodItem("Buffalo Chicken", "./Buffalo Chicken.jpg", "/lunch/buffalo.html"),
-    new FoodItem("Veggie & Hummus Sandwich", "./Veggie & Hummus Sandwich.jpg", "/lunch/vegg.html"),
-    new FoodItem("Lettuce Wraps", "./Lettuce Wraps.webp", "/lunch/lettuce.html"),
-    new FoodItem("Chicken Salad", "./cobb salad.jpg", "/lunch/cobb salad.html"),
-    new FoodItem("Chicken Quesadillas", "./Chicken Quesadillas.jpg", "/lunch/chicken.html")
+    new FoodItem("Buffalo Chicken", "/img/Buffalo Chicken.jpg", "/lunch/buffalo.html"),
+    new FoodItem("Veggie & Hummus Sandwich", "/img/Veggie & Hummus Sandwich.jpg", "/lunch/vegg.html"),
+    new FoodItem("Lettuce Wraps", "/img/Lettuce Wraps.webp", "/lunch/lettuce.html"),
+    new FoodItem("Chicken Salad", "/img/cobb salad.jpg", "/lunch/cobb salad.html"),
+    new FoodItem("Chicken Quesadillas", "/img/Chicken Quesadillas.jpg", "/lunch/chicken.html")
 ];
 
 // Dinner Section Items - An array of FoodItem objects for the dinner category
 const dinnerItems = [
-    new FoodItem("Chicken Adobo", "./image.png", "/dinner/adobo.html"),
-    new FoodItem("Chicken Binagoongan", "./chicken-binagoongan.jpg", "/dinner/chicken.html"),
-    new FoodItem("Chicken Gising Gising", "./Chicken Gising Gising.jpg", "/dinner/gising.html"),
-    new FoodItem("Escabeche", "./escabeche.webp", "/dinner/escabech.html"),
-    new FoodItem("Pineapple-Chicken", "./Pineapple-Chicken-Filipino-Version.jpg", "/dinner/malapot.html")
+    new FoodItem("Chicken Adobo", "/img/image.png", "/dinner/adobo.html"),
+    new FoodItem("Chicken Binagoongan", "/img/chicken-binagoongan.jpg", "/dinner/chicken.html"),
+    new FoodItem("Chicken Gising Gising", "/img/Chicken Gising Gising.jpg", "/dinner/gising.html"),
+    new FoodItem("Escabeche", "/img/escabeche.webp", "/dinner/escabech.html"),
+    new FoodItem("Pineapple-Chicken", "/img/Pineapple-Chicken-Filipino-Version.jpg", "/dinner/malapot.html")
 ];
 
 // The FoodSection class represents a section of food items (e.g., breakfast, lunch, dinner).

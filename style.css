@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: Bebas Neue, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+#intro {
+    text-align: center;
+    margin: 20px;
+}
+
+figcaption {
+    font-size: 0.8rem; /* Smaller font size for captions */
+    text-align: center;
+    margin-top: 10px; /* Reduce the space between image and caption */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2rem; /* Make section headings smaller */
+    margin-top: 30px; /* Add spacing above section titles */
+    margin-bottom: 20px; /* Add spacing below section titles */
+}
+
+/* Image Section Styling */
+#breakfast, #lunch, #dinner {
+    margin: 20px 0;
+    padding: 20px 0; /* Adds padding above and below each section */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between the columns */
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: 250px; /* Limit the size of images */
+    margin-bottom: 20px; /* Space below each column */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px; /* Fixed height for consistency */
+    margin: 0;
+    position: relative; /* Needed for button placement */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ddd;
+    margin-bottom: 10px; /* Add space between image and caption */
+}
+
+/* Button Styling */
+.image-button {
+    font-size: 0.75rem; /* smaller font size for button text */
+    padding: 8px 12px; /* Adjust button size */
+    margin-top: 10px; /* Space above the button */
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 30px; /* Position the button at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.image-button:hover {
+    background-color: #ff4500; /* Change button color on hover */
+}
+
+/* Spacing Adjustments */
+.row {
+    margin-bottom: 30px; /* Adds spacing between rows */
+}
+
+.col-md-4 {
+    padding: 0 10px; /* Adds padding between columns */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

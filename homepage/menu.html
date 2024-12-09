@@ -9,191 +9,188 @@
     
     <!-- Custom styles -->
     <style>
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-    h2 {
-        color: #333;
-    }
+        h2 {
+            color: #333;
+        }
 
-    .navbar {
-        background-color: #333;
-    }
+        .navbar {
+            background-color: #333;
+        }
 
-    .navbar-brand img {
-        max-width: 150px;
-    }
+        .navbar-brand img {
+            max-width: 150px;
+        }
 
-    .navbar-nav .nav-link {
-        color: #fff !important;
-    }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
 
-    .navbar-toggler-icon {
-        background-color: #fff; /* Ensure the hamburger icon is visible */
-    }
+        .navbar-toggler-icon {
+            background-color: #fff;
+        }
 
-    .dropdown-menu {
-        background-color: #333;
-        border: none;
-    }
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+        }
 
-    .dropdown-item {
-        color: #fff !important;
-    }
+        .dropdown-item {
+            color: #fff !important;
+        }
 
-    .dropdown-item:hover {
-        background-color: #ff6600;
-    }
+        .dropdown-item:hover {
+            background-color: #ff6600;
+        }
 
-    footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    footer a {
-        color: #ff6600;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-    }
-
-    /* Add space between containers */
-    .container {
-        margin-top: 30px;
-        margin-bottom: 30px; /* Adds space below each container */
-    }
-
-    /* Add space between rows inside the container */
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0 15px;
-        margin-bottom: 30px; /* Adds space between rows */
-    }
-
-    /* Space between columns */
-    .col-md-2 {
-        flex: 0 0 19%;
-        margin-bottom: 30px; /* Adds space between items */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .col-md-2 img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .button-container {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .see-more-btn {
-        background-color: orange;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    figcaption {
-        margin: 10px 0;
-        font-weight: bold;
-    }
-
-    .navbar-collapse {
-        justify-content: flex-end;
-    }
-
-    /* Styling for smaller devices */
-    @media (max-width: 768px) {
-        .navbar-nav {
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-        .navbar-nav .nav-link {
-            padding: 10px;
-            margin: 5px 0;
-        }
-    }
-</style>
 
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add space between containers */
+        .container {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Add space between rows inside the container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+
+        .col-md-2 {
+            flex: 0 0 19%;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .col-md-2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .see-more-btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        figcaption {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-nav .nav-link {
+                padding: 10px;
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-    <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/">
-        <img src="Healthy Apple.jpeg" alt="Logo" style="max-height: 50px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./menu.html">Menu</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBreakfast" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Breakfast
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownBreakfast">
-                    <li><a class="dropdown-item" href="/breakfast/avado.html">Avocado Breakfast Salad</a></li>
-                    <li><a class="dropdown-item" href="/breakfast/feta.html">Feta Egg and Spinach</a></li>
-                    <li><a class="dropdown-item" href="/breakfast/index.html">Sesame Instant Ramen</a></li>
-                    <li><a class="dropdown-item" href="/breakfast/bb.html">Blackbeans</a></li>
-                    <li><a class="dropdown-item" href="/breakfast/peanut.html">Peanut Butter & Chia Berry Jam Muffin</a></li>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="/">
+                <img src="Healthy Apple.jpeg" alt="Logo" style="max-height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBreakfast" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Breakfast
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownBreakfast">
+                            <li><a class="dropdown-item" href="../breakfast/avado.html">Avocado Breakfast Salad</a></li>
+                            <li><a class="dropdown-item" href="../breakfast/feta.html">Feta Egg and Spinach</a></li>
+                            <li><a class="dropdown-item" href="../breakfast/index.html">Sesame Instant Ramen</a></li>
+                            <li><a class="dropdown-item" href="../breakfast/bb.html">Blackbeans</a></li>
+                            <li><a class="dropdown-item" href="../breakfast/peanut.html">Peanut Butter & Chia Berry Jam Muffin</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLunch" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lunch</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLunch">
+                            <li><a class="dropdown-item" href="../lunch/buffalo.html">Buffalo Chicken</a></li>
+                            <li><a class="dropdown-item" href="../lunch/vegg.html">Veggie & Hummus Sandwich</a></li>
+                            <li><a class="dropdown-item" href="../lunch/lettuce.html">Lettuce Wraps</a></li>
+                            <li><a class="dropdown-item" href="../lunch/cobb salad.html">Chicken Salad</a></li>
+                            <li><a class="dropdown-item" href="../lunch/chicken.html">Chicken Quesadillas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDinner" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dinner</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDinner">
+                            <li><a class="dropdown-item" href="../dinner/adobo.html">Chicken Adobo</a></li>
+                            <li><a class="dropdown-item" href="../dinner/chicken.html">Chicken Binagoongan</a></li>
+                            <li><a class="dropdown-item" href="../dinner/gising.html">Chicken Gising Gising</a></li>
+                            <li><a class="dropdown-item" href="../dinner/teriyaki.html">Teriyaki Bowl</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLunch" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lunch</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownLunch">
-                    <li><a class="dropdown-item" href="../lunch/buffalo.html">Buffalo Chicken</a></li>
-                    <li><a class="dropdown-item" href="../lunch/vegg.html">Veggie & Hummus Sandwich</a></li>
-                    <li><a class="dropdown-item" href="../lunch/lettuce.html">Lettuce Wraps</a></li>
-                    <li><a class="dropdown-item" href="../lunch/cobb salad.html">Chicken Salad</a></li>
-                    <li><a class="dropdown-item" href="../lunch/chicken.html">Chicken Quesadillas</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDinner" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dinner</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownDinner">
-                    <li><a class="dropdown-item" href="../dinner/adobo.html">Chicken Adobo</a></li>
-                    <li><a class="dropdown-item" href="../dinner/chicken.html">Chicken Binagoongan</a></li>
-                    <li><a class="dropdown-item" href="../dinner/gising.html">Chicken Gising Gising</a></li>
-                    <li><a class="dropdown-item" href="../dinner/teriyaki.html">Teriyaki Bowl</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-</header>
+            </div>
+        </nav>
+    </header>
 
     <div class="container" id="app"></div>
 
